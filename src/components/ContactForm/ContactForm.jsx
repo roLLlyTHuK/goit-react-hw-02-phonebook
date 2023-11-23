@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import styles from './ContactForm.module.css'
-// Компонент форми додавання контактів
+
 export const ContactForm = ({ contacts, addContact }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');

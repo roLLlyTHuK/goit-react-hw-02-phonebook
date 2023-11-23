@@ -3,15 +3,6 @@ import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 
-
-
-
-
-
-
-
-
-// Основний батьківський компонент App
 export const App = () => {
   const initialContacts = [
     { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },

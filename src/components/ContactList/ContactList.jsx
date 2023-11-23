@@ -1,6 +1,6 @@
 import { ContactItem } from '../ContactItem/ContactItem.jsx'
 import styles from './ContactList.module.css'
-// Компонент списку контактів
+
 export const ContactList = ({ contacts, onDelete }) => (
     <ul className={ styles.list}>
     {contacts.map((contact) => (
