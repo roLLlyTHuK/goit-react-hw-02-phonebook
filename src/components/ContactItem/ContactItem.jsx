@@ -1,6 +1,6 @@
 import { ListItem, Button, Span } from './ContactItem.styled';
 
-export const ContactItem = () =>{
+export const ContactItem = (props) =>{
   handleDelete = () => {
     const { contact, onDelete } = this.props;
     onDelete(contact.id);
