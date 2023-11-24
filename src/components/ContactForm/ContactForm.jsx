@@ -2,14 +2,11 @@ import React, { Component } from 'react';
 import { Form, Input, Button, Label } from './ContactForm.styled'
 
 export class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+    state = {
       name: '',
       number: '',
     };
-  }
-
+ 
   handleSubmit = (e) => {
     e.preventDefault();
 

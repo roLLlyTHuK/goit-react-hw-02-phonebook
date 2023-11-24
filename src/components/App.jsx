@@ -5,9 +5,7 @@ import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 
 export class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+  state = {
       contacts: [
     {id: 'id-1', name: 'Rosie Simpson', number: '459-12-56'},
     {id: 'id-2', name: 'Hermione Kline', number: '443-89-12'},
@@ -16,7 +14,7 @@ export class App extends Component {
   ],
       filter: '',
     };
-  }
+  
 
   handleSubmit = ({ name, number }) => {
     const { contacts } = this.state;
