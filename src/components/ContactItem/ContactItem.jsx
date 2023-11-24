@@ -1,9 +1,21 @@
-import styles from './ContactItem.module.css'
+import { Component } from 'react';
+import { ListItem, Button, Span } from './ContactItem.styled';
 
-export const ContactItem = ({ contact, onDelete }) => (
-    <li className={ styles.item} key={contact.id}>
-        <div className={styles.name }>{contact.name}</div>
-        <div>{contact.number}</div>
-        <button className={ styles.button} onClick={() => onDelete(contact.id)}>Delete</button>
-  </li>
-);
+export class ContactItem extends Component {
+  handleDelete = () => {
+    const { contact, onDelete } = this.props;
+    onDelete(contact.id);
+  };
+
+  render() {
+    const { contact } = this.props;
+
+    return (
+      <ListItem >
+        <Span>{contact.name}: </Span>{contact.number}<Button onClick={this.handleDelete}>Delete</Button>
+      </ListItem>
+    );
+  }
+}
+
+

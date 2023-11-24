@@ -1,8 +1,12 @@
-import styles from './Filter.module.css'
+import { Form, Label, Input } from './Filter.styled'
 
-export const Filter = ({ filter, handleFilterChange }) => (
-    <div className={ styles.box}>
-    <p>Find contacts by name</p>
-    <input className={styles.input} type="text" name="filter" value={filter} onChange={handleFilterChange} placeholder="Search" />
-    </div>
-);
+export const Filter = ({ value, onChange }) => {
+  return (
+    <Form>
+      <Label>Filter contacts by name: </Label>
+      <Input type="text" value={value} onChange={onChange} />
+    </Form>
+  );
+}
+
+

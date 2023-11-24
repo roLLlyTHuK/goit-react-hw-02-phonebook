@@ -12,6 +12,12 @@ h1,
 h2 {
   text-align: center;
 }
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
