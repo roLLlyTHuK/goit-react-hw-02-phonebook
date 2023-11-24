@@ -1,7 +1,6 @@
-import { Component } from 'react';
 import { ListItem, Button, Span } from './ContactItem.styled';
 
-export class ContactItem extends Component {
+export const ContactItem = () =>{
   handleDelete = () => {
     const { contact, onDelete } = this.props;
     onDelete(contact.id);
